@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" alt="" /></a>
+        <div class="nav-lists" id="navLists">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+    <!-------------------contact us------------------- -->
+    <section class="location">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.170724309154!2d78.47245381409799!3d17.403592656920125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb975fc65e3c77%3A0xcafc0872655ae37e!2sNew%20MLA%20Quarters%2C%20Adarsh%20Nagar%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1660914753440!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa-solid fa-home"></i>
+            <span>
+              <h5>123, Road No. 12, Platinum</h5>
+              <p>Hyderabad, Telangana</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <span>
+              <h5>+91 7661088238</h5>
+              <p>Mon-Sat 10am-6pm</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <span>
+              <h5>info@sohail.com</h5>
+              <p>Email us your query</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="">
+            <input type="text" placeholder="Enter your name" required>
+            <input type="email" placeholder="Enter your email" required>
+            <input type="text" placeholder="Enter your subjext" required>
+            <textarea placeholder="Message" rows="10" required></textarea>
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+
+    <!----------------------footer------------------- -->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quaerat
+        laborum voluptatibus vitae fuga illum <br />
+        veritatis tenetur molestiae dolorem omnis necessitatibus corrupti amet
+        corporis natus rerum facilis, aliquid voluptatem magni.
+      </p>
+      <div class="icons">
+        <a href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjYwOTE4NjA1LCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D" target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a href="https://twitter.com/i/flow/login" target="_blank"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://in.linkedin.com/" target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+      <p>Copy right 2022 <i class="fa-regular fa-copyright"></i></p>
+    </section>
+
+    <!-------------------------javascript------------------- -->
+    <script>
+      const showMenu = () => {
+        document.getElementById("navLists").style.right = "0";
+      };
+      const hideMenu = () => {
+        document.getElementById("navLists").style.right = "-200px";
+      };
+    </script>
+  </body>
+</html>
